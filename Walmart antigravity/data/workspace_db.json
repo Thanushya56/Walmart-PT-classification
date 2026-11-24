@@ -1,0 +1,681 @@
+{
+  "profiles": [
+    {
+      "id": "usr_admin_001",
+      "email": "admin@walmart.com",
+      "full_name": "Workspace Owner (Admin)",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=128&fit=crop&crop=face",
+      "created_at": "2026-11-24T05:28:13.726Z"
+    },
+    {
+      "id": "usr_editor_002",
+      "email": "editor@walmart.com",
+      "full_name": "John Editor",
+      "avatar_url": "",
+      "created_at": "2026-11-24T05:28:13.727Z"
+    },
+    {
+      "id": "usr_viewer_003",
+      "email": "viewer@walmart.com",
+      "full_name": "Sarah Viewer",
+      "avatar_url": "",
+      "created_at": "2026-11-24T05:28:13.727Z"
+    },
+    {
+      "id": "usr_owner_002",
+      "email": "owner2@walmart.com",
+      "full_name": "Secondary Owner",
+      "avatar_url": "",
+      "created_at": "2026-11-24T05:28:13.880Z"
+    },
+    {
+      "id": "usr_290eb0ee-d4ed-445d-9eea-818b2d24e73a",
+      "email": "alex.teammate@gmail.com",
+      "full_name": "Alex Teammate",
+      "avatar_url": "https://api.dicebear.com/7.x/initials/svg?seed=Alex%20Teammate",
+      "created_at": "2026-11-24T05:28:26.098Z",
+      "updated_at": "2026-11-24T05:28:26.098Z"
+    },
+    {
+      "id": "usr_40662faf-7ebc-4f13-ac44-1d333eb104a1",
+      "email": "sarah.editor@gmail.com",
+      "full_name": "Sarah Johnson",
+      "avatar_url": "https://api.dicebear.com/7.x/initials/svg?seed=Sarah%20Johnson",
+      "created_at": "2026-11-24T05:32:26.012Z",
+      "updated_at": "2026-11-24T05:32:26.012Z"
+    }
+  ],
+  "workspaces": [
+    {
+      "id": "ws_walmart_main",
+      "name": "Walmart PT Classification Library",
+      "slug": "walmart-pt-classification",
+      "owner_id": "usr_admin_001",
+      "settings": {
+        "allow_viewer_export": false,
+        "invitation_expiry_days": 7
+      },
+      "created_at": "2026-11-24T05:28:13.726Z",
+      "updated_at": "2026-11-24T05:28:13.726Z"
+    },
+    {
+      "id": "ws_walmart_secondary",
+      "name": "Secondary Confidential Workspace",
+      "slug": "secondary-confidential-workspace",
+      "owner_id": "usr_owner_002",
+      "settings": {
+        "allow_viewer_export": false
+      },
+      "created_at": "2026-11-24T05:28:13.880Z",
+      "updated_at": "2026-11-24T05:28:13.880Z"
+    }
+  ],
+  "workspace_members": [
+    {
+      "id": "mem_admin_001",
+      "workspace_id": "ws_walmart_main",
+      "user_id": "usr_admin_001",
+      "role": "admin",
+      "status": "active",
+      "joined_at": "2026-11-24T05:28:13.726Z",
+      "last_active_at": "2026-11-24T05:28:13.726Z"
+    },
+    {
+      "id": "mem_ws2_owner",
+      "workspace_id": "ws_walmart_secondary",
+      "user_id": "usr_owner_002",
+      "role": "admin",
+      "status": "active",
+      "joined_at": "2026-11-24T05:28:13.880Z",
+      "last_active_at": "2026-11-24T05:28:13.880Z"
+    }
+  ],
+  "workspace_invitations": [
+    {
+      "id": "inv_458142d9-8c70-4120-ab73-1775e359e09f",
+      "workspace_id": "ws_walmart_main",
+      "email": "editor@walmart.com",
+      "assigned_role": "editor",
+      "invitation_token_hash": "88c34246103018415aab6da161d227f28cf804beaf0c9b0108ea027bc7c3a900",
+      "raw_token": "f9d2ed3b8d6a358921642345c3440ec19b94ca520ec909ea",
+      "invited_by": "usr_admin_001",
+      "expires_at": "2026-12-01T05:28:13.727Z",
+      "accepted_at": "2026-11-24T05:28:13.737Z",
+      "status": "accepted",
+      "created_at": "2026-11-24T05:28:13.727Z"
+    },
+    {
+      "id": "inv_c39de02c-5060-4490-bc5d-12150b0744c2",
+      "workspace_id": "ws_walmart_main",
+      "email": "viewer@walmart.com",
+      "assigned_role": "viewer",
+      "invitation_token_hash": "43e28bddf9bc3336a731a16ba481d0cdbb204a7c9a7dbd4984db48f70b2676f7",
+      "raw_token": "9a01170c71f250e7270f0fba4ff395941db740784360dd9a",
+      "invited_by": "usr_admin_001",
+      "expires_at": "2026-12-01T05:28:13.818Z",
+      "accepted_at": "2026-11-24T05:28:13.818Z",
+      "status": "accepted",
+      "created_at": "2026-11-24T05:28:13.818Z"
+    },
+    {
+      "id": "inv_d406c67a-d266-461d-b902-4a755b3ab663",
+      "workspace_id": "ws_walmart_main",
+      "email": "alex.teammate@gmail.com",
+      "assigned_role": "editor",
+      "invitation_token_hash": "e913a9533f4cab356bf0abd0e822534b245ef980aa4e4e0be4aeb738dab0dd8f",
+      "raw_token": "a8b0a02e9bfe05ef56b59e6cfed74a1d06c0284bd2270cd2",
+      "invited_by": "usr_admin_001",
+      "expires_at": "2026-12-01T05:28:26.096Z",
+      "accepted_at": "2026-11-24T05:28:26.098Z",
+      "status": "accepted",
+      "created_at": "2026-11-24T05:28:26.096Z"
+    },
+    {
+      "id": "inv_c0fac424-ca77-46dc-86aa-1a14c9ac8488",
+      "workspace_id": "ws_walmart_main",
+      "email": "sarah.editor@gmail.com",
+      "assigned_role": "editor",
+      "invitation_token_hash": "c713fedaa0d9be95e35ca0a131523a06f4709b86a2b3aa6da6ccabdeb27f940f",
+      "raw_token": "a43b20a465a537fbc74581acb15c2ca879f3b6f894828d3a",
+      "invited_by": "usr_admin_001",
+      "expires_at": "2026-12-01T05:32:26.003Z",
+      "accepted_at": "2026-11-24T05:32:26.012Z",
+      "status": "accepted",
+      "created_at": "2026-11-24T05:32:26.003Z"
+    },
+    {
+      "id": "inv_683bbe61-0095-4fa9-822d-ef16dbfa1c93",
+      "workspace_id": "ws_walmart_main",
+      "email": "thanushya.elugam@deccanteam.us",
+      "assigned_role": "editor",
+      "invitation_token_hash": "f28c46a951036482f0c058313f7190f67295b71464d14651e0def3da2d017382",
+      "raw_token": "cfa46b60484d14d4e028bea2b8130b34cbb07350d05b761e",
+      "invited_by": "usr_admin_001",
+      "expires_at": "2026-12-01T05:38:14.744Z",
+      "accepted_at": null,
+      "status": "pending",
+      "created_at": "2026-11-24T05:38:14.744Z"
+    },
+    {
+      "id": "inv_4ab0f3d7-d947-45c0-9d18-9a61ddd56ccd",
+      "workspace_id": "ws_walmart_main",
+      "email": "jagarapu.sai@deccanteam.us",
+      "assigned_role": "editor",
+      "invitation_token_hash": "88bc343835261d1a7f1ccbb2cc76c94fa3bd1cc450495ead37ce793b31ce462e",
+      "raw_token": "3ad1f55f0079d0d07cd283b94cf222485b642afacd0bad87",
+      "invited_by": "usr_admin_001",
+      "expires_at": "2026-12-01T05:39:57.512Z",
+      "accepted_at": null,
+      "status": "pending",
+      "created_at": "2026-11-24T05:39:57.512Z"
+    }
+  ],
+  "pt_groups": [
+    {
+      "pt_name": "3D Glasses",
+      "category": "Electronics",
+      "pt_path": "Electronics>TV & Video>3D Glasses",
+      "created_by": "usr_admin_001",
+      "created_by_name": "Workspace Owner (Admin)",
+      "created_at": "2026-11-21T05:28:13.726Z"
+    },
+    {
+      "pt_name": "Adhesive Bandages",
+      "category": "Health & Beauty",
+      "pt_path": "Health & Beauty>Bandages & Bandaging Supplies>Adhesive Bandages",
+      "created_by": "usr_admin_001",
+      "created_by_name": "Workspace Owner (Admin)",
+      "created_at": "2026-11-22T05:28:13.726Z"
+    },
+    {
+      "pt_name": "Air Fresheners",
+      "category": "Home & Garden",
+      "pt_path": "Home & Garden>Home Fragrance>Air Fresheners",
+      "created_by": "usr_admin_001",
+      "created_by_name": "Workspace Owner (Admin)",
+      "created_at": "2026-11-23T05:28:13.726Z"
+    },
+    {
+      "pt_name": "Updated PT",
+      "category": "Electronics",
+      "pt_path": "Updated PT",
+      "created_by": "usr_editor_002",
+      "created_by_name": "John Editor",
+      "created_at": "2026-11-24T05:28:13.807Z"
+    },
+    {
+      "pt_name": "Alto Horns",
+      "category": "Musical Instruments & Pro Audio",
+      "pt_path": "Musical Instruments & Pro Audio>Brass Instruments>Alto Horns",
+      "created_by": "usr_owner_002",
+      "created_by_name": "Secondary Owner",
+      "created_at": "2026-11-24T05:28:13.880Z"
+    }
+  ],
+  "classified_images": [
+    {
+      "id": "img_76fb42ca-6039-4f7b-ad5f-9bdcb20a78f3",
+      "workspace_id": "ws_walmart_secondary",
+      "image_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+      "pt_name": "Alto Horns",
+      "pt_key": "alto horns",
+      "category_name": "Musical Instruments & Pro Audio",
+      "pt_path": "Musical Instruments & Pro Audio>Brass Instruments>Alto Horns",
+      "uploaded_by": "usr_owner_002",
+      "uploaded_by_name": "Secondary Owner",
+      "uploaded_at": "2026-11-24T05:28:13.880Z",
+      "image_hash": "53f01d18fd6a95d0d6c5890b5f790ef5feda33980e6165ae2d58ebe46b35d363",
+      "p_hash": "fbcddcf5e62796fa"
+    },
+    {
+      "id": "img_d4354aeb-4b2e-4d12-8c86-c2bd78f36ec7",
+      "workspace_id": "ws_walmart_main",
+      "image_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+      "pt_name": "Updated PT",
+      "pt_key": "updated pt",
+      "category_name": "Electronics",
+      "pt_path": "Updated PT",
+      "uploaded_by": "usr_editor_002",
+      "uploaded_by_name": "John Editor",
+      "uploaded_at": "2026-11-24T05:28:13.804Z",
+      "image_hash": "53f01d18fd6a95d0d6c5890b5f790ef5feda33980e6165ae2d58ebe46b35d363",
+      "p_hash": "fbcddcf5e62796fa"
+    },
+    {
+      "id": "img_001",
+      "workspace_id": "ws_walmart_main",
+      "image_url": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=600&auto=format&fit=crop&q=80",
+      "pt_name": "3D Glasses",
+      "pt_key": "3d glasses",
+      "category_name": "Electronics",
+      "pt_path": "Electronics>TV & Video>3D Glasses",
+      "uploaded_by": "usr_admin_001",
+      "uploaded_by_name": "Workspace Owner (Admin)",
+      "uploaded_at": "2026-11-21T05:28:13.726Z",
+      "image_hash": "hash_sony_3d",
+      "p_hash": "a1b2c3d4e5f60718"
+    },
+    {
+      "id": "img_002",
+      "workspace_id": "ws_walmart_main",
+      "image_url": "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=600&auto=format&fit=crop&q=80",
+      "pt_name": "Adhesive Bandages",
+      "pt_key": "adhesive bandages",
+      "category_name": "Health & Beauty",
+      "pt_path": "Health & Beauty>Bandages & Bandaging Supplies>Adhesive Bandages",
+      "uploaded_by": "usr_admin_001",
+      "uploaded_by_name": "Workspace Owner (Admin)",
+      "uploaded_at": "2026-11-22T05:28:13.726Z",
+      "image_hash": "hash_bandaid_100",
+      "p_hash": "18273645e5f60718"
+    },
+    {
+      "id": "img_003",
+      "workspace_id": "ws_walmart_main",
+      "image_url": "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?w=600&auto=format&fit=crop&q=80",
+      "pt_name": "Air Fresheners",
+      "pt_key": "air fresheners",
+      "category_name": "Home & Garden",
+      "pt_path": "Home & Garden>Home Fragrance>Air Fresheners",
+      "uploaded_by": "usr_admin_001",
+      "uploaded_by_name": "Workspace Owner (Admin)",
+      "uploaded_at": "2026-11-23T05:28:13.726Z",
+      "image_hash": "hash_glade_hawaii",
+      "p_hash": "5544332211009988"
+    }
+  ],
+  "activity_logs": [
+    {
+      "id": "act_412c6c1e-4308-4cdf-a075-42a1e095bf92",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_invited",
+      "entity_type": "invitation",
+      "entity_id": "inv_4ab0f3d7-d947-45c0-9d18-9a61ddd56ccd",
+      "details": {
+        "recipient_email": "jagarapu.sai@deccanteam.us",
+        "assigned_role": "editor",
+        "expires_at": "2026-12-01T05:39:57.512Z"
+      },
+      "created_at": "2026-11-24T05:39:57.512Z"
+    },
+    {
+      "id": "act_0ab67799-e0b4-477a-b1e8-bccf345923ae",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_invited",
+      "entity_type": "invitation",
+      "entity_id": "inv_683bbe61-0095-4fa9-822d-ef16dbfa1c93",
+      "details": {
+        "recipient_email": "thanushya.elugam@deccanteam.us",
+        "assigned_role": "editor",
+        "expires_at": "2026-12-01T05:38:14.744Z"
+      },
+      "created_at": "2026-11-24T05:38:14.744Z"
+    },
+    {
+      "id": "act_be59f45b-3497-435e-aaaf-f2ef35329905",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_removed",
+      "entity_type": "member",
+      "entity_id": "mem_4e49d497-4a45-4d0d-bb2d-f2a08f73f2c0",
+      "details": {
+        "removed_user_email": "alex.teammate@gmail.com",
+        "previous_role": "editor"
+      },
+      "created_at": "2026-11-24T05:37:47.572Z"
+    },
+    {
+      "id": "act_352f764d-1969-4b33-ab85-2893b7dedd4d",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_removed",
+      "entity_type": "member",
+      "entity_id": "mem_d989139b-07b4-4ffe-aa98-bfa7bd308541",
+      "details": {
+        "removed_user_email": "editor@walmart.com",
+        "previous_role": "viewer"
+      },
+      "created_at": "2026-11-24T05:37:43.923Z"
+    },
+    {
+      "id": "act_0c735f9e-23b2-4cde-ba58-edd930e5a6a4",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_removed",
+      "entity_type": "member",
+      "entity_id": "mem_13ddd271-1079-4886-8b04-55e8b2e0557c",
+      "details": {
+        "removed_user_email": "sarah.editor@gmail.com",
+        "previous_role": "editor"
+      },
+      "created_at": "2026-11-24T05:37:40.569Z"
+    },
+    {
+      "id": "act_157e1c36-2004-4507-8cff-46d60693513b",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_40662faf-7ebc-4f13-ac44-1d333eb104a1",
+      "actor_name": "Sarah Johnson",
+      "actor_email": "sarah.editor@gmail.com",
+      "action": "invitation_accepted",
+      "entity_type": "member",
+      "entity_id": "mem_13ddd271-1079-4886-8b04-55e8b2e0557c",
+      "details": {
+        "assigned_role": "editor"
+      },
+      "created_at": "2026-11-24T05:32:26.012Z"
+    },
+    {
+      "id": "act_02c6aee7-320b-4458-aea4-72abf67378f5",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_invited",
+      "entity_type": "invitation",
+      "entity_id": "inv_c0fac424-ca77-46dc-86aa-1a14c9ac8488",
+      "details": {
+        "recipient_email": "sarah.editor@gmail.com",
+        "assigned_role": "editor",
+        "expires_at": "2026-12-01T05:32:26.003Z"
+      },
+      "created_at": "2026-11-24T05:32:26.003Z"
+    },
+    {
+      "id": "act_e6723b35-8f01-4f7a-af43-aacb77f76402",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_290eb0ee-d4ed-445d-9eea-818b2d24e73a",
+      "actor_name": "Alex Teammate",
+      "actor_email": "alex.teammate@gmail.com",
+      "action": "invitation_accepted",
+      "entity_type": "member",
+      "entity_id": "mem_4e49d497-4a45-4d0d-bb2d-f2a08f73f2c0",
+      "details": {
+        "assigned_role": "editor"
+      },
+      "created_at": "2026-11-24T05:28:26.098Z"
+    },
+    {
+      "id": "act_24911b21-9045-42ac-a421-bc54fbe95f18",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_invited",
+      "entity_type": "invitation",
+      "entity_id": "inv_d406c67a-d266-461d-b902-4a755b3ab663",
+      "details": {
+        "recipient_email": "alex.teammate@gmail.com",
+        "assigned_role": "editor",
+        "expires_at": "2026-12-01T05:28:26.096Z"
+      },
+      "created_at": "2026-11-24T05:28:26.096Z"
+    },
+    {
+      "id": "act_4aa7e910-0fc0-42af-92f3-c4bc8933bb4b",
+      "workspace_id": "ws_walmart_secondary",
+      "actor_id": "usr_owner_002",
+      "actor_name": "Secondary Owner",
+      "actor_email": "owner2@walmart.com",
+      "action": "image_uploaded",
+      "entity_type": "image",
+      "entity_id": "img_76fb42ca-6039-4f7b-ad5f-9bdcb20a78f3",
+      "details": {
+        "pt_name": "Alto Horns",
+        "category": "Musical Instruments & Pro Audio"
+      },
+      "created_at": "2026-11-24T05:28:13.880Z"
+    },
+    {
+      "id": "act_8402fa4e-6678-4fdc-83e6-97d386fa64b8",
+      "workspace_id": "ws_walmart_secondary",
+      "actor_id": "usr_owner_002",
+      "actor_name": "Secondary Owner",
+      "actor_email": "owner2@walmart.com",
+      "action": "pt_group_created",
+      "entity_type": "pt_group",
+      "entity_id": "Alto Horns",
+      "details": {
+        "pt_name": "Alto Horns",
+        "category": "Musical Instruments & Pro Audio"
+      },
+      "created_at": "2026-11-24T05:28:13.880Z"
+    },
+    {
+      "id": "act_3203cadd-e88f-4e75-bd77-47d8b728b17e",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_removed",
+      "entity_type": "member",
+      "entity_id": "mem_754e8f62-6223-4eda-a730-2edc86736182",
+      "details": {
+        "removed_user_email": "viewer@walmart.com",
+        "previous_role": "viewer"
+      },
+      "created_at": "2026-11-24T05:28:13.858Z"
+    },
+    {
+      "id": "act_9278425e-49d1-4f27-895b-f197d903bdfd",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "role_changed",
+      "entity_type": "member",
+      "entity_id": "mem_d989139b-07b4-4ffe-aa98-bfa7bd308541",
+      "details": {
+        "target_email": "editor@walmart.com",
+        "previous_role": "editor",
+        "new_role": "viewer"
+      },
+      "created_at": "2026-11-24T05:28:13.842Z"
+    },
+    {
+      "id": "act_03ebe004-7d93-45ba-a504-517620d16d87",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_viewer_003",
+      "actor_name": "Sarah Viewer",
+      "actor_email": "viewer@walmart.com",
+      "action": "invitation_accepted",
+      "entity_type": "member",
+      "entity_id": "mem_754e8f62-6223-4eda-a730-2edc86736182",
+      "details": {
+        "assigned_role": "viewer"
+      },
+      "created_at": "2026-11-24T05:28:13.818Z"
+    },
+    {
+      "id": "act_c036f851-d6b9-47c8-903b-f49bd799437f",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_invited",
+      "entity_type": "invitation",
+      "entity_id": "inv_c39de02c-5060-4490-bc5d-12150b0744c2",
+      "details": {
+        "recipient_email": "viewer@walmart.com",
+        "assigned_role": "viewer",
+        "expires_at": "2026-12-01T05:28:13.818Z"
+      },
+      "created_at": "2026-11-24T05:28:13.818Z"
+    },
+    {
+      "id": "act_76b29267-293b-45bf-a1c9-b678884039c2",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_editor_002",
+      "actor_name": "John Editor",
+      "actor_email": "editor@walmart.com",
+      "action": "pt_changed",
+      "entity_type": "image",
+      "entity_id": "img_d4354aeb-4b2e-4d12-8c86-c2bd78f36ec7",
+      "details": {
+        "previous_pt": "3D Glasses",
+        "new_pt": "Updated PT"
+      },
+      "created_at": "2026-11-24T05:28:13.807Z"
+    },
+    {
+      "id": "act_5ea0ab8d-a9a8-465c-bdcd-c7c2b3b13188",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_editor_002",
+      "actor_name": "John Editor",
+      "actor_email": "editor@walmart.com",
+      "action": "image_uploaded",
+      "entity_type": "image",
+      "entity_id": "img_d4354aeb-4b2e-4d12-8c86-c2bd78f36ec7",
+      "details": {
+        "pt_name": "3D Glasses",
+        "category": "Electronics"
+      },
+      "created_at": "2026-11-24T05:28:13.805Z"
+    },
+    {
+      "id": "act_252e4831-01d0-4fe5-9021-45b46d82d58f",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_editor_002",
+      "actor_name": "John Editor",
+      "actor_email": "editor@walmart.com",
+      "action": "invitation_accepted",
+      "entity_type": "member",
+      "entity_id": "mem_d989139b-07b4-4ffe-aa98-bfa7bd308541",
+      "details": {
+        "assigned_role": "editor"
+      },
+      "created_at": "2026-11-24T05:28:13.737Z"
+    },
+    {
+      "id": "act_a59a7e24-9343-4222-a939-b7df074e536c",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "member_invited",
+      "entity_type": "invitation",
+      "entity_id": "inv_458142d9-8c70-4120-ab73-1775e359e09f",
+      "details": {
+        "recipient_email": "editor@walmart.com",
+        "assigned_role": "editor",
+        "expires_at": "2026-12-01T05:28:13.727Z"
+      },
+      "created_at": "2026-11-24T05:28:13.728Z"
+    },
+    {
+      "id": "act_001",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "workspace_initialized",
+      "entity_type": "workspace",
+      "entity_id": "ws_walmart_main",
+      "details": {
+        "name": "Walmart PT Classification Library"
+      },
+      "created_at": "2026-11-19T05:28:13.726Z"
+    },
+    {
+      "id": "act_002",
+      "workspace_id": "ws_walmart_main",
+      "actor_id": "usr_admin_001",
+      "actor_name": "Workspace Owner (Admin)",
+      "actor_email": "admin@walmart.com",
+      "action": "image_uploaded",
+      "entity_type": "image",
+      "entity_id": "img_001",
+      "details": {
+        "pt_name": "3D Glasses"
+      },
+      "created_at": "2026-11-21T05:28:13.726Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prd_img_76fb42ca-6039-4f7b-ad5f-9bdcb20a78f3",
+      "workspace_id": "ws_walmart_secondary",
+      "product_name": "Alto Horns",
+      "pt_name": "Alto Horns",
+      "category_name": "Musical Instruments & Pro Audio",
+      "status": "classified",
+      "created_by": "usr_owner_002",
+      "updated_by": "usr_owner_002",
+      "created_at": "2026-11-24T05:28:13.880Z",
+      "updated_at": "2026-11-24T05:28:13.880Z",
+      "images": [
+        {
+          "image_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+          "image_hash": "53f01d18fd6a95d0d6c5890b5f790ef5feda33980e6165ae2d58ebe46b35d363"
+        }
+      ]
+    },
+    {
+      "id": "prd_img_d4354aeb-4b2e-4d12-8c86-c2bd78f36ec7",
+      "workspace_id": "ws_walmart_main",
+      "product_name": "3D Glasses",
+      "pt_name": "3D Glasses",
+      "category_name": "Electronics",
+      "status": "classified",
+      "created_by": "usr_editor_002",
+      "updated_by": "usr_editor_002",
+      "created_at": "2026-11-24T05:28:13.804Z",
+      "updated_at": "2026-11-24T05:28:13.804Z",
+      "images": [
+        {
+          "image_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+          "image_hash": "53f01d18fd6a95d0d6c5890b5f790ef5feda33980e6165ae2d58ebe46b35d363"
+        }
+      ]
+    },
+    {
+      "id": "prd_img_001",
+      "workspace_id": "ws_walmart_main",
+      "product_name": "3D Glasses",
+      "pt_name": "3D Glasses",
+      "category_name": "Electronics",
+      "status": "classified",
+      "created_by": "usr_admin_001",
+      "updated_by": "usr_admin_001",
+      "created_at": "2026-11-21T05:28:13.726Z",
+      "updated_at": "2026-11-21T05:28:13.726Z"
+    },
+    {
+      "id": "prd_img_002",
+      "workspace_id": "ws_walmart_main",
+      "product_name": "Adhesive Bandages",
+      "pt_name": "Adhesive Bandages",
+      "category_name": "Health & Beauty",
+      "status": "classified",
+      "created_by": "usr_admin_001",
+      "updated_by": "usr_admin_001",
+      "created_at": "2026-11-22T05:28:13.726Z",
+      "updated_at": "2026-11-22T05:28:13.726Z"
+    },
+    {
+      "id": "prd_img_003",
+      "workspace_id": "ws_walmart_main",
+      "product_name": "Air Fresheners",
+      "pt_name": "Air Fresheners",
+      "category_name": "Home & Garden",
+      "status": "classified",
+      "created_by": "usr_admin_001",
+      "updated_by": "usr_admin_001",
+      "created_at": "2026-11-23T05:28:13.726Z",
+      "updated_at": "2026-11-23T05:28:13.726Z"
+    }
+  ],
+  "product_images": [],
+  "classification_history": []
+}
