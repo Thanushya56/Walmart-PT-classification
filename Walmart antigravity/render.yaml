@@ -4,9 +4,8 @@ services:
     env: node
     rootDir: Walmart antigravity
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
-    healthCheckPath: /api/health
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: node server/index.js
     envVars:
       - key: NODE_ENV
         value: production
