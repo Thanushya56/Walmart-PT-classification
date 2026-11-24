@@ -2,6 +2,7 @@ services:
   - type: web
     name: walmart-pt-classification
     env: node
+    rootDir: Walmart antigravity
     plan: free
     buildCommand: npm install && npm run build
     startCommand: npm run start
